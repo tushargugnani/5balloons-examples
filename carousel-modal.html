@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+	setTimeout(function() {
+	    $('#admodal').modal({
+	    	backdrop: 'static',
+    		keyboard: false
+	    });
+
+	    $('#adCarousel').carousel({
+		  interval: 3000,
+		  cycle: true
+		});
+	}, 3000);
+});
+</script>
+<link type="text/css" rel="stylesheet" href="bootstrap.min.css"/>
+<style type="text/css">
+#admodal .carousel-caption {
+  background-color: rgba(0,0,0,.5);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  padding: 0 0 10px 25px;
+  color: #fff;
+  text-align: left;
+}
+
+#admodal .modal-footer {
+	text-align: center;
+}
+</style>
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-lg-12">
+						  <div id="admodal" class="modal fade" tabindex="-1" role="dialog">
+						  <div class="modal-dialog" role="document">
+						    <div class="modal-content">
+						      <div class="modal-body">
+						      		<div id="adCarousel" class="carousel slide" data-ride="carousel">
+
+									    <!-- Wrapper for slides -->
+									    <div class="carousel-inner">
+									      <div class="item active">
+									      	<a target="_blank" href="http://amzn.to/2ps6j0X">
+									        	<img src="amazon.jpg" alt="Amazon Great Indian Sale" style="width:100%;">
+									        </a>
+									        <div class="carousel-caption">
+										        <h3>Amazon Great Indian Sale</h3>
+										        <p>Starting 11th May, Create your wish-list now.</p>
+										      </div>
+									      </div>
+
+									      <div class="item">
+									      	<a target="_blank" href="http://amzn.to/2pdsqMh">
+									        	<img src="amazon-fashion.jpg" alt="Amazon Fashion Sale" style="width:100%;">
+									        </a>
+									      </div>
+									    
+									      <div class="item">
+									      	<a target="_blank" href="http://amzn.to/2pscSR2">
+									        	<img src="all-electronics.jpg" alt="Amazon Electronics Sale" style="width:100%;">
+									        </a>
+									      </div>
+
+									      <div class="item">
+									        <a target="_blank" href="http://amzn.to/2qTpge7">
+									        	<img src="mobiles.jpg" alt="Amazon Mobile Sales" style="width:100%;">
+									        </a>
+									      </div>
+
+									      <div class="item">
+									        <a target="_blank" href="http://amzn.to/2qTsiPz">
+									        	<img src="home-kitchen.jpg" alt="Amazon Home Kitchen Sales" style="width:100%;">
+									        </a>
+									      </div>
+									    </div>
+
+									  </div>
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-danger" data-dismiss="modal">No, I don't care about discounts.</button>
+						        <br class="visible-xs"/>
+						        <br class="visible-xs"/>
+						        <button type="button" class="btn btn-success">Yes, I would love to see the deals.</button>
+						      </div>
+						    </div><!-- /.modal-content -->
+						  </div><!-- /.modal-dialog -->
+						</div><!-- /.modal -->
+		</div>
+	</div>
+</div>
+</body>
+</html>
