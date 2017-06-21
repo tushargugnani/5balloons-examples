@@ -13,7 +13,7 @@ $(document).ready(function(){
 	    });
 
 	    $('#adCarousel').carousel({
-		  interval: 3000,
+		  interval: 2000,
 		  cycle: true
 		});
 	}, 3000);
@@ -42,8 +42,10 @@ $(document).ready(function(){
 <div class="container">
 	<div class="row">
 		<div class="col-lg-12">
-			<h1>Bootstrap Modal Example</h1>
-			<h5>Bootstrap modal is set to a timer of 3 seconds.</h5>
+		                  <h1>Bootstrap Modal with Carousal</h1>
+		                  <h5>This opens on timer of 3 seconds</h5>
+		                  <h6>Can be used to get email subscriptions and important user information.</h6>
+		                  <p>These are generally annoying to the customer experience and should be used cautiouslly</p>
 						  <div id="admodal" class="modal fade" tabindex="-1" role="dialog">
 						  <div class="modal-dialog" role="document">
 						    <div class="modal-content">
@@ -53,47 +55,38 @@ $(document).ready(function(){
 									    <!-- Wrapper for slides -->
 									    <div class="carousel-inner">
 									      <div class="item active">
-									      	<a target="_blank" href="http://amzn.to/2ps6j0X">
-									        	<img src="amazon.jpg" alt="Amazon Great Indian Sale" style="width:100%;">
-									        </a>
-									        <div class="carousel-caption">
-										        <h3>Amazon Great Indian Sale</h3>
-										        <p>Starting 11th May, Create your wish-list now.</p>
-										      </div>
+									        <h1>This is Slide 1</h1>
+									        <h5>Same is shown of text, but you can use any html content imges, videos, etc inside this box</h5>
 									      </div>
 
 									      <div class="item">
-									      	<a target="_blank" href="http://amzn.to/2pdsqMh">
-									        	<img src="amazon-fashion.jpg" alt="Amazon Fashion Sale" style="width:100%;">
-									        </a>
+									      	<h1>This is Slide 2</h1>
+									      	<h5>You can choose to have carousal or just a single html content</h5>
 									      </div>
 									    
 									      <div class="item">
-									      	<a target="_blank" href="http://amzn.to/2pscSR2">
-									        	<img src="all-electronics.jpg" alt="Amazon Electronics Sale" style="width:100%;">
-									        </a>
+									      	<h1>This is Slide 3</h1>
+									      	<h5>Carousal is a good way to show ads, to keep user engaged.</h5>
 									      </div>
 
 									      <div class="item">
-									        <a target="_blank" href="http://amzn.to/2qTpge7">
-									        	<img src="mobiles.jpg" alt="Amazon Mobile Sales" style="width:100%;">
-									        </a>
+									      	<h1>This is Slide 4</h1>
+									      	<h5>Okay</h5>
 									      </div>
 
 									      <div class="item">
-									        <a target="_blank" href="http://amzn.to/2qTsiPz">
-									        	<img src="home-kitchen.jpg" alt="Amazon Home Kitchen Sales" style="width:100%;">
-									        </a>
+									      	<h1>This is Slide 5</h1>
+									      	<h5>Enough, Done !</h5>
 									      </div>
 									    </div>
 
 									  </div>
 						      </div>
 						      <div class="modal-footer">
-						        <button type="button" class="btn btn-danger" data-dismiss="modal">No, I don't care about discounts.</button>
+						        <button type="button" class="btn btn-danger" data-dismiss="modal">No, Close this popup now.</button>
 						        <br class="visible-xs"/>
 						        <br class="visible-xs"/>
-						        <button type="button" class="btn btn-success">Yes, I would love to see the deals.</button>
+						        <button type="button" class="btn btn-success">Yes, I would love to click on Ads.</button>
 						      </div>
 						    </div><!-- /.modal-content -->
 						  </div><!-- /.modal-dialog -->
