@@ -6,17 +6,27 @@
 <script src="bootstrap.min.js"></script>
 <script>
 $(document).ready(function(){
-	setTimeout(function() {
-	    $('#admodal').modal({
-	    	backdrop: 'static',
-    		keyboard: false
-	    });
-
+	  if (!sessionStorage.adModal) {
+		setTimeout(function() {
+			$('#admodal').find('.item').first().addClass('active');
+		    $('#admodal').modal({
+		    	backdrop: 'static',
+	    		keyboard: false
+		    });
+		}, 3000);
 	    $('#adCarousel').carousel({
-		  interval: 2000,
+		  interval: 4000,
 		  cycle: true
 		});
-	}, 3000);
+	    
+	    $("#buttonSuccess").click(function(e){
+	    	e.preventDefault();
+	    	var url = $(this).attr("href");
+	    	var win = window.open(url, '_blank');
+	    	$('#admodal').modal('hide');
+	    })
+	    sessionStorage.adModal = 1;
+	}
 });
 </script>
 <link type="text/css" rel="stylesheet" href="bootstrap.min.css"/>
